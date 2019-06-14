@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<meta charset="ISO-8859-1">
+		<title>Create Alert</title>
+	</head>
+	<body>
+		<h2>Fill in Alert Criteria</h2>
+		
+		<form action= "create_alert_check.jsp" method= "POST">
+			Enter Alert Information: <br>
+			Model <input type="text" name="model" required><br>
+			Make <input type="text" name="make" required><br>
+			Color <input type="text" name="color" required><br>
+			<select name="type">
+				<option value="Sedan">Sedan</option>
+				<option value="Minivan">Minivan</option>
+				<option value="SUV">SUV</option>
+			</select>
+			
+			<input type="submit" value="Set Alert">
+		</form>
+		<br>
+		<a href="../account/account_redirect.jsp">Back to Account</a><br>
+		<a href="../account/logout.jsp">Logout Here</a>
+		
+	</body>
+</html>

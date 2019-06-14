@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Sell item</title>
+</head>
+<body>
+<h2>Fill in Information</h2>
+
+	<form action= "sellItemCheck.jsp" method= "POST">
+			Enter Information: <br>
+			VIN <input type="number" name="VIN" required> <br>
+			Model <input type="text" name="model" required> <br>
+			Make <input type="text" name="make" required> <br>
+			Color <input type="text" name="color" required> <br>
+			Mileage <input type="number" name="mileage" required> <br>
+			<select name="type">
+				<option value="Sedan">Sedan</option>
+				<option value="Minivan">Minivan</option>
+				<option value="SUV">SUV</option>
+			</select><br>
+			<!--  Sedan, Minivan, or SUV? <input type="text" name="type"> <br>-->
+			End Date(YYYY-MM-DD) <input type="text" name="date" required> <br>
+			End Time (HH:MM) <input type="text" name="time" required> <br>
+			Initial Price: $<input type="number" name="init_price" required> <br>
+			Bid Increment: $<input type="number" name="bid_inc" required> <br>
+			Minimum Price: $<input type="number" name="min_price" required> <br>
+			<input type="submit" value="Post Auction">
+	</form>
+</body>
+</html>
